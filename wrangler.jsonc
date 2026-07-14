@@ -1,7 +1,14 @@
 {
-  "name": "tradevision-web",
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tradevision-edge",
   "compatibility_date": "2026-07-14",
+  "observability": {
+    "enabled": true
+  },
   "assets": {
-    "directory": "./public"
-  }
+    "directory": "."
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
 }
